@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 5%;
+    background-color: #7D7C7C;
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    gap: 120px;
+}
+
+.cabecalho__conteudo__logo {
+    width: 10%;
+}
+
+.cabecalho__conteudo__links {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.cabecalho__conteudo__links__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #191717;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.cabecalho__conteudo__links__link:hover {
+    color: #CF0A0A;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #F1EFEF;
+    color: #191717;
+}
+
+.principal__conteudo {
+    padding: 2% 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.principal__conteudo__titulo {
+    font-size: 1.7rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.principal__conteudo__titulo__forte {
+    color: #CF0A0A;
+}
+
+.principal__conteudo__texto {
+    font-size: 1.4rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.rodape__conteudo {
+    padding: 2% 15% 0% 15%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7D7C7C;
+}
+
+.rodape__conteudo__texto {
+    font-size: 1.4rem;
+    color: #191717;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__conteudo {
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 80px;
+
+    }
+
+    .principal__conteudo {
+        width: auto;
+        gap: 40px;
+    }
+}
